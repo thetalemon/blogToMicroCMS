@@ -10,8 +10,8 @@ API_DOMAIN = ''
 with open('mappedContents.csv', encoding='UTF-8') as f:
     reader = csv.reader(f)
 
-    for index, row in enumerate(reader):
-      if index == 0:
+    for row in reversed(list(reader)):
+      if row[0] == 'title':
         continue
 
       date =datetime.datetime.strptime(row[1], '%m/%d/%Y %H:%M:%S')

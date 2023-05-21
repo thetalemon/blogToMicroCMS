@@ -4,7 +4,10 @@ import type { Post } from './type/post'
 import styles from './styles/index.module.scss'
 
 export const getPosts = async (): Promise<Post[]> => {
-  const data = await client.get({ endpoint: POST_LIST_ENDPOINT })
+  const data = await client.get({
+    endpoint: POST_LIST_ENDPOINT,
+    queries: { orders: '-publishedAt,-importData.publishDate' },
+  })
 
   return data.contents as Post[]
 }
@@ -17,7 +20,13 @@ export const Home = async () => {
       <h1>Blog to MicroCMS Sample</h1>
       <p className={styles.description}>
         ブログ（MT形式）からMicroCMSに移行するサンプルとして作成したもの。
-        解説は<Link href={`/`}>コチラ</Link>。
+        手順等は
+        <Link
+          href={`https://github.com/thetalemon/blogToMicroCMS#blog-to-microcms`}
+        >
+          コチラ
+        </Link>
+        。
       </p>
 
       <hr />

@@ -1,0 +1,50 @@
+{
+  "apiFields": [
+    {
+      "idValue": "jbdNdCtzRt",
+      "fieldId": "title",
+      "name": "タイトル",
+      "kind": "text"
+    },
+    { "fieldId": "content", "name": "本文", "kind": "richEditor" },
+    {
+      "fieldId": "category",
+      "name": "カテゴリ",
+      "kind": "relationList",
+      "required": true,
+      "selectItems": [],
+      "selectInitialValue": [],
+      "multipleSelect": false
+    },
+    {
+      "fieldId": "importData",
+      "name": "importデータ",
+      "kind": "custom",
+      "customFieldCreatedAt": "2023-05-20T10:12:51.400Z"
+    }
+  ],
+  "customFields": [
+    {
+      "createdAt": "2023-05-20T10:12:51.400Z",
+      "fieldId": "importData",
+      "name": "importデータ",
+      "fields": [
+        {
+          "idValue": "cnbqhMT3Ml",
+          "fieldId": "publishDate",
+          "name": "公開日",
+          "kind": "date"
+        },
+        {
+          "idValue": "n4ZvE_wHER",
+          "fieldId": "content",
+          "name": "本文",
+          "kind": "textArea"
+        }
+      ],
+      "position": [["n4ZvE_wHER", "cnbqhMT3Ml"]],
+      "updatedAt": "2023-05-20T10:12:51.400Z",
+      "viewerGroup": "jRE"
+    }
+  ]
+}

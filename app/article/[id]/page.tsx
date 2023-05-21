@@ -41,13 +41,13 @@ export const Page = async ({ params: { id } }: StaticParams) => {
         </p>
         <p className={styles.publishedAt}>
           {format(
-            new Date(post.importData.publishDate ?? post.publishedAt),
+            new Date(post.importData?.publishDate ?? post.publishedAt),
             'yyyy/MM/dd HH:mm'
           )}
         </p>
         <div
           dangerouslySetInnerHTML={{
-            __html: `${post.importData.content ?? post.content}`,
+            __html: `${post.importData?.content ?? post.content}`,
           }}
           className={styles.post}
         />

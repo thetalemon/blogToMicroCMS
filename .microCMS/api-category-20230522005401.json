@@ -1,0 +1,11 @@
+{
+  "apiFields": [
+    {
+      "idValue": "BspmOgO6F5",
+      "fieldId": "name",
+      "name": "カテゴリ名",
+      "kind": "text"
+    }
+  ],
+  "customFields": []
+}

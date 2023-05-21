@@ -3,8 +3,8 @@ export type Post = {
   publishedAt: string
   revisedAt: string
   title: string
-  content: string
-  importData: {
+  content?: string
+  importData?: {
     publishDate: string
     content: string
   }
